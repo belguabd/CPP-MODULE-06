@@ -1,8 +1,8 @@
 FLAGS=c++ -Wextra -Wall -Werror -std=c++98
-NAME=convert
+NAME=data_serialization
 
 
-SRC=ScalarConverter.cpp main.cpp 
+SRC=Serialization.cpp main.cpp 
 
 
 OBJ=$(SRC:.cpp=.o)
