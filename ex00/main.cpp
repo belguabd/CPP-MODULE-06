@@ -6,7 +6,7 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:14:10 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/15 17:25:33 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/29 13:00:08 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 int main(int argc, char const *argv[])
 {
+
     if (argc != 2)
         return std::cout << "Invalid argument!!\n", 1;
     std::string data = argv[1];
