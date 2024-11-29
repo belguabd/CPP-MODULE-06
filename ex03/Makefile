@@ -4,7 +4,7 @@ NAME=dynamic_cast
 
 SRC=Base.cpp Utils.cpp main.cpp
 
-HEADER=A.hpp B.hpp Base.hpp C.hpp
+HEADER=A.hpp B.hpp Base.hpp C.hpp Utils.hpp
 
 OBJ=$(SRC:.cpp=.o)
 
