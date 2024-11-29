@@ -6,11 +6,28 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 17:34:34 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/16 18:07:05 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/29 13:39:13 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Serialization.hpp"
+
+Serialization::Serialization()
+{
+}
+Serialization::Serialization(const Serialization &other)
+{
+    *this = other;
+}
+Serialization &Serialization::operator=(const Serialization &other)
+{
+    if (this != &other)
+        *this = other;
+    return *this;
+}
+Serialization::~Serialization()
+{
+}
 
 uintptr_t Serialization::serialize(Data *ptr)
 {
