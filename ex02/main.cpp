@@ -6,7 +6,7 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 09:16:28 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/30 11:10:13 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/30 11:33:44 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int main()
     identify(ptr);
     identify(ref);
     delete ptr;
-    delete &ref;
+    delete refPtr;
     return 0;
 }
