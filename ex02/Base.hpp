@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   A.hpp                                              :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/17 09:11:50 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/29 13:41:28 by belguabd         ###   ########.fr       */
+/*   Created: 2024/11/17 08:56:15 by belguabd          #+#    #+#             */
+/*   Updated: 2024/11/30 10:09:10 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef A_HPP
-#define A_HPP
+#ifndef Base_HPP
+#define Base_HPP
 
-#include "Base.hpp"
+#include <iostream>
 
-class A : public Base
+class Base
 {
+    public:
+        virtual ~Base();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:16:20 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/29 13:35:23 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/30 10:32:49 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ ScalarConverter::~ScalarConverter()
 
 static int parse_input(const std::string &data)
 {
-    if (data.empty() || (data.size() == 1 && data[0] == 'f'))
+    if (data.empty())
         std::cout << "Error in your input!!\n", std::exit(1);
     if (data.size() > 1 && std::isalpha(data[0]))
         std::cout << "Error in your input!!\n", std::exit(1);
@@ -105,7 +105,7 @@ void ScalarConverter::convert(const std::string &data)
     char char_value = static_cast<char>(num);
     int int_value = static_cast<int>(num);
     double double_value = static_cast<double>(num);
-    float flaot_value = static_cast<float>(num);
+    float float_value = static_cast<float>(num);
 
     if (num < 0)
         std::cout << "char: impossible\n";
@@ -115,6 +115,6 @@ void ScalarConverter::convert(const std::string &data)
         std::cout << "char: " << "Non displayable" << std::endl;
 
     std::cout << "int: " << int_value << std::endl;
-    std::cout << "float: " << flaot_value << (std::floor(num) == num ? ".0f" : "f") << std::endl;
+    std::cout << "float: " << float_value << (std::floor(num) == num ? ".0f" : "f") << std::endl;
     std::cout << "double: " << double_value << (std::floor(num) == num ? ".0" : "") << std::endl;
 };

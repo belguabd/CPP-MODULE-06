@@ -6,7 +6,7 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 09:16:28 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/17 11:13:53 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/30 11:10:13 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@
 int main()
 {
     Base *ptr = generate();
-    Base &ref = *ptr;
+    Base *refPtr = generate();
+    Base &ref = *refPtr;
     identify(ptr);
     identify(ref);
+    delete ptr;
+    delete &ref;
+    return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: belguabd <belguabd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:17:11 by belguabd          #+#    #+#             */
-/*   Updated: 2024/11/17 11:11:33 by belguabd         ###   ########.fr       */
+/*   Updated: 2024/11/30 10:58:28 by belguabd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,11 +62,10 @@ void identify(Base &p)
             {
                 C &Cptr = dynamic_cast<C &>(p);
                 (void)Cptr;
-                std::cout << "The derived class is 'B'" << std::endl;
+                std::cout << "The derived class is 'C'" << std::endl;
             }
             catch (...)
             {
-
                 std::cout << "The derived is unknown" << std::endl;
             }
         }
